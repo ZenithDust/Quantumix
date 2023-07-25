@@ -1,0 +1,2 @@
+-- Made By ZenithDust aka Yaje_K
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ZenithDust/Quantumix/main/Quantumix.lua'))()
