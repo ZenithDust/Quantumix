@@ -9,6 +9,4 @@ for i,v in pairs(r) do
   print(v)
 end
 
-if game.PlaceId == "13127800756" then
-  loadstring(game:HttpGet('https://raw.githubusercontent.com/ZenithDust/Quantumix/main/Games/13127800756.lua'))()
-end
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ZenithDust/Quantumix/main/Games/13127800756.lua'))()
