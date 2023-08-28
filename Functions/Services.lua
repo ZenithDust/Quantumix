@@ -1,6 +1,6 @@
 local customs = {
-  local GameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name,
-  local HttpService = game:GetService("HttpService"),
-  local Players = game:GetService('Players'),
-  local vu = game:GetService('VirtualUser')
+  ['GameName'] = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name,
+  ['HttpService'] = game:GetService("HttpService"),
+  ['Players'] = game:GetService('Players'),
+  ['vu'] = game:GetService('VirtualUser')
 }
