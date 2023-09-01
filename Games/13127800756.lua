@@ -1,9 +1,4 @@
-pcall(function()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/MaGiXxScripter0/keysystemv2api/master/setup.lua"))()
-end)
-local KeySystem = _G.KSS.classes.keysystem.new("Quantumix")
-local KeyInput = KeySystem.key(Key)
-if KeyInput.Finish and KeyInput:verifyHWID() and game.PlaceId == 13127800756 then
+if game.PlaceId == 13127800756 then
   -- [ Locals ] --
   local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
   local Replicated = game:GetService("ReplicatedStorage")
