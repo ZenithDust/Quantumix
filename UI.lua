@@ -199,7 +199,7 @@ KeyButton.Parent = KeyFrame
 ButtonCorner.Parent = KeyButton
 ButtonCorner.CornerRadius = UDim.new(0, 10)
 
-getgenv().Key = KeySystem:key(TextBox.Text)
+local Key = KeySystem:key(TextBox.Text)
 
 KeyButton.MouseButton1Click:Connect(function()
   if Key.Finish and Key:verifyHWID() then
