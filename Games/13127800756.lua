@@ -1,4 +1,4 @@
-if game.PlaceId == 13127800756 then
+if _G.FinishKey == true and game.PlaceId == 13127800756 then
   -- [ Locals ] --
   local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
   local Replicated = game:GetService("ReplicatedStorage")
@@ -845,5 +845,7 @@ end
       PopupPlayerGUI:Destroy()
       wait()
     end
-  end
+	end
+else
+	print('witty')
 end
