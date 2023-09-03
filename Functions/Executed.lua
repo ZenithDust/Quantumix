@@ -6,5 +6,7 @@ local request = http_request or request or HttpPost or syn.request
 
 local r = request(reponse)
 for i,v in pairs(r) do
-  print(v)
+  if r.StatusCode == 200 then
+    print("Hello")
+  end
 end
