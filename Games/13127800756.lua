@@ -84,7 +84,7 @@ if _G.finishKey == true and game.PlaceId == 13127800756 then
   local NPC3 = Game.Zones:FindFirstChild("3").Interactables.ArmWrestling.NPC:GetChildren()
   local NPC4 = Game.Zones:FindFirstChild("4").Interactables.ArmWrestling.NPC:GetChildren()
   local NPC5 = Game.Zones:FindFirstChild("5").Interactables.ArmWrestling.NPC:GetChildren()
-  local NPC4 = Game.Zones:FindFirstChild("GreekEvent").Interactables.ArmWrestling.NPC:GetChildren()
+  local NPCE = Game.Zones:FindFirstChild("GreekEvent").Interactables.ArmWrestling.NPC:GetChildren()
   local giftList = Gifts:GetChildren()
   
   -- [ Functions ] --
