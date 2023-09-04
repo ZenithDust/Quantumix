@@ -63,6 +63,8 @@ if _G.finishKey == true and game.PlaceId == 13127800756 then
   local zone2NPC = {}
   local zone3NPC = {}
   local zone4NPC = {}
+  local zone5NPC = {}
+  local zoneENPC = {}
   local giftTable = {}
   local petsTable = {}
   local petNameString = {}
@@ -73,6 +75,7 @@ if _G.finishKey == true and game.PlaceId == 13127800756 then
     [3] = {['Name'] = {}, ['Instance'] = {}},
     [4] = {['Name'] = {}, ['Instance'] = {}},
     [5] = {['Name'] = {}, ['Instance'] = {}},
+    ['Event'] = {['Name'] = {}, ['Instance'] = {}}
   }
   
   -- [ GetChildren ]
@@ -80,6 +83,8 @@ if _G.finishKey == true and game.PlaceId == 13127800756 then
   local NPC2 = Game.Zones:FindFirstChild("2").Interactables.ArmWrestling.NPC:GetChildren()
   local NPC3 = Game.Zones:FindFirstChild("3").Interactables.ArmWrestling.NPC:GetChildren()
   local NPC4 = Game.Zones:FindFirstChild("4").Interactables.ArmWrestling.NPC:GetChildren()
+  local NPC5 = Game.Zones:FindFirstChild("5").Interactables.ArmWrestling.NPC:GetChildren()
+  local NPC4 = Game.Zones:FindFirstChild("GreekEvent").Interactables.ArmWrestling.NPC:GetChildren()
   local giftList = Gifts:GetChildren()
   
   -- [ Functions ] --
@@ -292,6 +297,12 @@ end
   for i, v in pairs(NPC4) do
     table.insert(zone4NPC, v.Name)
   end
+  for i, v in pairs(NPC5) do
+    table.insert(zone5NPC, v.Name)
+  end
+  for i, v in pairs(NPCE) do
+    table.insert(zoneENPC, v.Name)
+  end
   for i, v in pairs(giftList) do
     if v:isA('Frame') then
       local gifts = v:GetChildren()
@@ -359,6 +370,8 @@ end
   table.insert(zone2NPC, 'None')
   table.insert(zone3NPC, 'None')
   table.insert(zone4NPC, 'None')
+  table.insert(zone5NPC, 'None')
+  table.insert(zoneENPC, 'None')
 
   -- [ Tabs ] --
   local Home = Window:MakeTab({
@@ -404,6 +417,8 @@ end
   local selectedNPC2
   local selectedNPC3
   local selectedNPC4
+  local selectedNPC5
+  local seletedENPC
   local selectedPets
   local petToName
   local newName
@@ -582,11 +597,19 @@ end
     end
   })
   AWSFarm:AddDropdown({
-    Name = "Select NPC: (Zone 4)",
+    Name = "Select NPC: (Zone 5)",
     Default = "None",
-    Options = zone4NPC,
+    Options = zone5NPC,
     Callback = function(value)
-      selectedNPC4 = value
+      selectedNPC5 = value
+    end
+  })
+  AWSFarm:AddDropdown({
+    Name = "Select NPC: (Greek Event)",
+    Default = "None",
+    Options = zoneENPC,
+    Callback = function(value)
+      selectedENPC = value
     end
   })
   AWSFarm:AddToggle({
@@ -783,7 +806,7 @@ end
   AWSTeleport:AddDropdown({
     Name = "Select Zone",
     Default = "None",
-    Options = {"BackToSchool", "Futuristic", "Beach", "NuclearBunker"},
+    Options = {"BackToSchool", "Futuristic", "Beach", "NuclearBunker", "DinoWorld" ,"Greek"},
     Callback = function(value)
       selectedZone = value
     end
@@ -800,6 +823,10 @@ end
           teleport(3, selectedZone)
         elseif selectedZone == "NuclearBunker" then
           teleport(4, selectedZone)
+        elseif selectedZone == "DinoWorld" then
+          teleport(5, selectedZone)
+        elseif selectedZone == "Greek" then
+          teleport('GreekEvent', selectedZone)
         end
       end
     end
