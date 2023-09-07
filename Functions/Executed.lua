@@ -5,8 +5,4 @@ local reponse = {Url=WebsiteUrl, Body="", Method="POST", Headers="application/js
 local request = http_request or request or HttpPost or syn.request
 
 local r = request(reponse)
-for i,v in pairs(r) do
-  if r.StatusCode == 200 then
-    print('Quantumix HUB')
-  end
-end
+print('Welcome To Quantumix HUB!')
