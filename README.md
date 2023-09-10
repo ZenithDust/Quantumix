@@ -4,7 +4,8 @@
 
 Script :
 ```lua
-loadstring(game:HttpGet('https://raw.githubusercontent.com/ZenithDust/Quantumix/main/Quantumix.lua'))()```
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ZenithDust/Quantumix/main/Quantumix.lua'))()
+```
 
 Supported Games:
 - [x] Arm Wrestling Simulator
