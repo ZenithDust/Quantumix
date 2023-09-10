@@ -1,5 +1,5 @@
 ## Quantumix HUB
-![logo](/files/thumbnail.png)
+![logo](https://raw.githubusercontent.com/ZenithDust/Quantumix/main/Files/thumbnail.png)
 > A Roblox script hub that helps you gain advantage over other players, it elevates your gaming experience to the highest level.
 
 *Supported Games:*
