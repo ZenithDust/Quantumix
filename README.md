@@ -13,4 +13,5 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/ZenithDust/Quantumix/
 ```
 
 **[Get Key Here!](https://hub.quantumix.fun)**
+<br>
 **[Discord Server](https://discord.gg/Jb4DP46PF8)**
