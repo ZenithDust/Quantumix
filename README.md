@@ -11,4 +11,4 @@ Supported Games:
 - [x] Murder Mystery 2
 
 > [!IMPORTANT]
-> Hello World
+> [Get Key Here!](http://hub.quantumix.fun)
