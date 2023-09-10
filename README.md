@@ -3,7 +3,8 @@
 > A Roblox script hub that helps you gain advantage over other players, it elevates your gaming experience to the highest level.
 
 Script :
-```loadstring(game:HttpGet('https://raw.githubusercontent.com/ZenithDust/Quantumix/main/Quantumix.lua'))()```
+```lua
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ZenithDust/Quantumix/main/Quantumix.lua'))()```
 
 Supported Games:
 - [x] Arm Wrestling Simulator
