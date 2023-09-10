@@ -12,4 +12,4 @@
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ZenithDust/Quantumix/main/Quantumix.lua'))()
 ```
 
-**[Get Key Here!](http://hub.quantumix.fun)**
+**[Get Key Here!](https://hub.quantumix.fun)**
